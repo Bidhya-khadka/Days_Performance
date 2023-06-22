@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- landing page and navbar section -->
+  <section id="course-header" class="header">
+    <nav>
+      <a href="#">
+        <img src="../day7/public/linkedln.svg" alt="logo-picture" >
+      </a>
+
+      <div class="nav-links" id="navLinks">
+
+        <i class="fa fa-times" onclick="hideMenu(event)"></i>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#course-cors">courses</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars" onclick="showMenu(event)"></i>
+    </nav>
+
+    <div class="text-box">
+      <h3>this is travel blog page</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ab ipsum, ipsa quos blanditiis quidem exercitationem quaerat ratione facilis assumenda molestiae et non earum vitae sapiente tempore iusto mollitia dolores.</p>
+    </div>
+  </section>
+
+  <!-- course section -->
+  <section id="course-cors" class="course">
+    <h1>course for travel page</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit architecto a accusamus. Cupiditate eius placeat, dolor beatae nesciunt magnam est? In quod repudiandae vero dicta voluptatem eaque eos eveniet quae.</p>
+
+
+    <div class="row">
+    <!-- card section -->
+
+
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos"  width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+    <!-- card section -->
+
+
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos" width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+    <!-- card section -->
+
+      
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos" width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+    <!-- card section -->
+
+
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos" width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+    <!-- card section -->
+
+
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos" width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+    <!-- card section -->
+
+
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos" width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+    <!-- card section -->
+
+
+      <div class="course-col">
+        <img src="./bungee.jpg" alt="bungee-photos" width="100" height="100">
+        <h3>bungee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi.</p>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- about section -->
+  <section class="about-section" id="about-page">
+    <div class="container">
+      
+      <!-- content-section -->
+
+      <div class="content-section">
+        <div class="title">About user</div>
+
+        <div class="content">
+          <h3>we are lorem ipsum</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, ullam.</p>
+
+          <div class="button">
+            <button>Read More</button>
+          </div>
+        </div>
+
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+      </div>
+
+      <!-- image section -->
+
+      <div class="image-section">
+        <img src="../day1/assests/nepal-map.jpg" alt="">
+      </div>
+
+      </div>
+  </section>
+
+  <script>
+    const navLinks =document.getElementById("navLinks");
+    function hideMenu(e){
+      e.preventDefault();
+      navLinks.style.right="-200px"
+    }
+    function showMenu(e){
+       e.preventDefault();
+      navLinks.style.right="0px"
+    }
+
+  </script>
+  
+</body>
+</html>

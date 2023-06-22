@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>form demo</title>
+</head>
+<body>
+  <!-- for and id must be with same name otherwise it label for wont reference to input tag -->
+  <form action="">
+    <label for="username">First Name :</label>
+    <input type="text" id="username" minlength="12" required placeholder="enter your name;">
+    <br>
+    <br>
+    <label for="email-pro">Email:</label>
+    <input type="email" id="email-pro" required>
+    <br>
+    <br>
+
+    <label for="password">Password :</label>
+    <input type="password" id="password" maxlength="8">
+    <br><br>
+
+    <!-- value acts as like default  -->
+    <label for="quantity" id="_quantity">Quantity:</label>
+    <input type="number" value="1" min="1" max="10">
+    <br><br>
+
+    <label for="phonenumber" >Phone number</label>
+    <input type="tel" id="phonenumber" placeholder="+977-**********" pattern="+[9][7][7]-[0-9]{10}">
+    <br><br>
+
+    <label for="gender">Gender :
+      <label for="male">Male</label>
+      <input type="radio" id="male" value="Male" name="gender">
+      <label for="female">Female</label>
+      <input type="radio" id="female" value="Female" name="gender">
+      <label for="other">Other</label>
+      <input type="radio" id="other" value="Other" name="gender">
+    </label>
+    <br><br>
+
+    <label for="description">Description</label>
+    <textarea name="Description" id="description" cols="30" rows="10"></textarea>
+
+    <br><br>
+
+    <label for="birth-date">BOD:</label>
+    <input type="date"  id="birth-date">
+
+    <br><br><br>
+    <label for="terms">I agree with terms nd condition</label>
+    <input type="checkbox">
+    <br><br>
+    
+
+    <input type="submit">
+    <input type="reset">
+    
+
+
+  </form>
+  
+</body>
+</html>

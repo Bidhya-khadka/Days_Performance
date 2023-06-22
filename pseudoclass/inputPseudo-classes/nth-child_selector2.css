@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+  color: goldenrod;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 1.25em;
+
+}
+h1{
+  color: white;
+}
+.cointainer{
+  padding: 15px;
+}
+table{
+  width: 100%;
+  background-color: #222;
+  border-color: #111;
+
+}
+td{
+  width: 33%;
+  padding: 10px;
+}
+/* first heading row selects to design such way */
+tr:nth-child(1){
+  background-color: #444;
+  color: white;
+  font-weight: bold;
+}
+tr:nth-child(2n){
+  background-color: #333;
+  color: greenyellow;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+  
+    }
+    h1{
+      text-align: center;
+      font-size: 2em;
+      color: goldenrod;
+    }
+    label{
+      color: burlywood;
+      font-size: 1.5em;
+      /* display: inline-block; */
+    }
+    form{
+      
+      margin:0 auto;
+      width: 600px;
+      padding: 1em;
+      border: 1px solid burlywood;
+      font-size: 20px;
+      border-radius: 1em;
+    }
+    form li+li{
+      margin-top: 1em;
+
+    }
+    ul{
+      list-style: none;
+    }
+    input{
+      font-size: 1.2em;
+    }
+    
+    input:focus{
+      background-color: orange;
+    }
+    input#button:hover{
+      box-shadow: 0 0 20px 0 darkcyan ;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- create a form and create a focus effect whenever the fields get selected -->
+  <h1>form</h1>
+  <div>
+    <form >
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="enter your name">
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="enter your email">
+        </li>
+        <li>
+          <input  id="button" type="submit" >
+        </li>
+      </ul>
+
+
+    </form>
+  </div>
+  
+</body>
+</html>

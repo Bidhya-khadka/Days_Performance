@@ -1,0 +1,29 @@
+body{
+  background-color: black;
+  color: white;
+  font-style: oblique;
+}
+label{
+  margin: 2px;
+  font-size: 1em;
+}
+input:read-only{
+  background-color: black;
+  border: 1px solid goldenrod;
+  color:goldenrod
+}
+
+input:read-write,div{
+  background-color: lightcoral
+}
+
+div{
+  width: 500px;
+  border: 2px dotted goldenrod;
+  padding: 4px
+}
+
+/* here we use read-only and its opposite attribute contenteditable in html element whereas to select this we use read-only and read-write input pseudoclasses */
+
+/* as in read-write and contenteditable we specify read-write pseudo class like above  */
+

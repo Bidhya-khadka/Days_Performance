@@ -1,0 +1,17 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+  margin: 8px;
+  font-size: 1em;
+}
+input:invalid{
+  background-color: coral;
+  color: white;
+  border: 2px solid goldenrod;
+}
+input:valid{
+  border-color: #333;
+}

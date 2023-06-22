@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h3{
+      font-size: 64px;
+    }
+    /* screen is optional here */
+
+    @media screen and (max-width:400px) {
+      h3{
+        font-size: 24px;
+        color: aqua;
+      }
+      
+    }
+    @media screen and (max-width:768px) {
+      h3{
+        font-size: 50px;
+        color: green;
+      }
+      
+    }
+    @media screen and (min-width:769px)and (max-width:1023px) {
+      h3{
+        font-size: 60px;
+        color: red;
+      }
+      
+    }
+    @media screen and (max-width:1024px) {
+      h3{
+        font-size: 100px;
+        color: aqua;
+      }
+      /* child width percentage is relative to child percentage width */
+    }
+    .parent-percentage-div{
+      background-color: burlywood;
+      width: 80%;
+      height: 150px;
+      padding: 30px;
+      margin: 30px;
+    }
+    .child-percentage-div{
+      background-color: crimson;
+      width: 50%;
+      height: 150px;
+      
+    }
+    /* but in this child viewport width doesnot depend on its parent */
+    .parent-viewport-width-div{
+      background-color: burlywood;
+      width: 50%;
+      height: 150px;
+      padding: 30px;
+      margin: 30px;
+
+    }
+    .child-viewport-width-div{
+      background-color: crimson;
+      width: 80vw;
+      height: 150px;
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <h3>media responsiveness content</h3>
+
+  <div class="parent-percentage-div">
+    <div class="child-percentage-div"></div>
+  </div>
+
+  <div class="parent-viewport-width-div">
+    <div class="child-viewport-width-div"></div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>focus within</title>
+  <style>
+    body{
+      background-color: black;
+      color: white;
+    }
+    .myform{
+     text-align: center;
+
+    }
+    .mydiv{
+      margin: 1em;
+      padding: 1em 5em;
+      /* border: 1px solid #111; */
+      border-radius: 15px;
+      border: none;
+    }
+    .mydiv:focus-within{
+      border: 2px solid deeppink;
+      background-color: #0a0a0a;
+
+    }
+  </style>
+</head>
+<body>
+  <form class="myform">
+
+    <h1>Focus within</h1>
+    <div class="mydiv">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </div>
+    <div class="mydiv">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+    <div class="mydiv">
+      <label >Occupation</label>
+      <input type="radio" name="oc">Male
+      <input type="radio" name="oc">Female
+      <input type="radio" name="oc">Other
+    </div>
+    <input type="submit" >
+
+  </form>
+  
+</body>
+</html>

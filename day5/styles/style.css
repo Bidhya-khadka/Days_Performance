@@ -1,0 +1,92 @@
+/* h1{
+  font-size: 20px;
+  color: crimson;
+}
+h1,.container{
+  text-decoration: underline;
+/* } */
+
+/* *{
+  background-image: url("https: //unsplash.com/photos/_RBcxo9AU-U");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+ /* p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  /* text-align: center; */
+  /* text-align: justify;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-decoration: line-through; */
+  /* text-decoration: underline; */
+ /* } */
+
+
+/* styling styles */
+ /* ul{
+  list-style-type: none;
+
+ }
+   */
+   /* .box-model{
+    border: 1px solid red;
+    margin-bottom: 12px;
+   } */
+
+
+   /* span{
+    border: 1px solid rgb(5, 100, 30);
+    padding: 10px 20px 30px 40px;
+    padding: 10px 20px; 
+    padding: 10px;
+    border-radius: 20px;
+
+   } */
+
+/*    
+   th,td{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+   }
+   table{
+    border-collapse: collapse;
+    
+   }
+
+   th{
+    color: goldenrod;
+    text-transform: uppercase;
+   }
+   tr:hover{
+    background-color: goldenrod;
+   }
+   
+
+   .block-element{
+    border: 1px solid red;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+   } */
+
+    body{
+    background-image: url('../Assests/cup.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: goldenrod;
+      background-position: center;
+      height: 100vh;
+  
+    }
+
+   
+
+   
+  

@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  display: grid;
+  margin:3em;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+/* width for each grid layout is defined by the property grid-template-columns */
+.grid-item{
+  background-color: burlywood;
+  font-size: 2em;
+  padding: 30px 0;
+  margin: 5px;
+  color: black;
+
+}
+
+/* .grid-item:nth-child(odd){
+  background-color: beige;
+} */
+
+/* .grid-item:nth-child(even){
+  background-color: beige;
+} */
+
+/* .grid-item:nth-child(2){
+  background-color: beige;
+} */
+
+.grid-item:nth-child(4n){
+  background-color: beige;
+}
+/* n=0,1,2,3,4,5...... 4*n */
+/* index starts from here 1 */

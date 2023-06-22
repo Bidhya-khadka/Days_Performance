@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>placeholder shown input pseudo class</title>
+  <style>
+    body{
+      background-color: black;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+
+    }
+    label{
+      margin: 2px;
+      font-size: 1em;
+    }
+    input:placeholder-shown{
+      border: 2px solid goldenrod;
+      
+    }
+  </style>
+</head>
+<body>
+  <label for="name">Name</label>
+  <input type="text" id="name"><br><br>
+
+  <label for="address">Address</label>
+  <input type="text"  id="address" placeholder="enter your address">
+  
+</body>
+</html>

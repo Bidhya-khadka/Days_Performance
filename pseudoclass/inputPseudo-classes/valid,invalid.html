@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>valid invalid input pseudo classes</title>
+  <link rel="stylesheet" href="valid,invalid.css">
+</head>
+<body>
+  <form>
+
+    <label for="name">Name</label>
+    <input type="text" id="name"><br><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email"><br><br>
+
+    <label for="generalnumber">Enter number between 1-10</label>
+    <input type="text" id="generalnumber" placeholder="enter number between 1-10" pattern="[1-10]"><br><br>
+
+    <input type="submit" >
+
+  </form>
+  <!-- patterrn attribute is only used for the text input type -->
+  
+</body>
+</html>

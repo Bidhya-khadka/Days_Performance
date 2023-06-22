@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact us page</title>
+  <link rel="stylesheet" href="./styles/contact-us.css">
+ 
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="left-section">
+        <img src="../day1/assests/vrit-tech-logo.png" alt="vrit-logo-png" class="vrit-logo">
+      </div>
+      <div class="mid-section">
+        <h4>Make a call: <span>+977 9861601174</span></h4>
+      </div>
+      <div class="right-section">
+        <div class="contact-logos">
+          <img src="./public/facebook.svg" alt="facebook icon">
+          <img src="./public/twitter.svg" alt="twitter icon">
+          <img src="./public/insta.svg" alt="instagram icon">
+          <img src="./public/linkedln.svg" alt="linkedln icon">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-details">
+    <h1>contact details</h1>
+    <div class="contact-medium">
+      <div class="left-contact-medium">
+
+        <div class="svg" >
+        <img src="./public/phone.svg" alt="call"></div>
+        <div class="svg-desc" ><h3>+977 9861601174</h3>
+        </div>
+
+        <div class="svg" >
+        <img src="./public/mail.svg" alt="mail"></div>
+        <div class="svg-desc" ><h3>info@vrittechnologies.com</h3>
+        </div>
+
+        <div class="svg" >
+        <img src="./public/location.svg" alt="location"></div>
+        <div class="svg-desc" ><h3>Shankhamul, Kathmandu</h3>
+        </div>
+        
+
+
+      </div>
+
+      <div class="right-contact-medium">
+        <h2>Request a Quote</h2>
+        <p>Ready to Work Together? Build a project with us!</p>
+
+        <form class="myform">
+          
+          <div class="field-div">
+            <label for="name">Name <span>*</span></label><br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="field-div">
+            <label for="email">Email <span>*</span></label><br>
+            <input type="text" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="field-div">
+            <label for="phone">phone <span>*</span></label><br>
+            <input type="text" id="phone" placeholder="Enter your number" pattern="[0-9]{10}" required>
+          </div>
+
+          <div class="field-div">
+            <label for="queries">Queries <span>*</span></label><br>
+            <select id="queries" >
+              <option value="" disabled >choose the query about</option>
+              <option value="">Web Development</option>
+              <option value="">App Development</option>
+              <option value="">Digital Marketing</option>
+            </select required>
+          </div>
+
+
+          <div class="field-div">
+            <label for="message">Message <span>*</span></label><br>
+            <textarea name="" id="message" cols="100" rows="5"  placeholder="Your Message" required></textarea>
+          </div>
+
+          <div class="field-div">
+            <input id="submit-button" type="submit" >
+          </div>
+
+
+
+
+        </form>
+        
+      </div>
+
+    </div>
+  </div>
+
+  
+</body>
+</html>
