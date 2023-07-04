@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // GET METHOD
+      const SERVER_URL = "https://dummyjson.com";
+      const getUsers = async () => {
+        try {
+          const resp = await fetch(`${SERVER_URL}/users`, {
+            method: "GET",
+          });
+          const users = await resp.json();
+          document.write(users.users[0].email);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      getUsers();
+
+      //json
+      // key ma double quote chaiyo" value ma haina SOIN JSON
+      // const student ={
+      //   firstname:"bidhya",
+      //   lastname:"khadka"
+      // }
+
+      const product = {
+        title: "test data",
+      };
+      const body = JSON.stringify(product);
+
+      // POST METHOD
+      // body must be on json.stringify
+      const addNewProduct = async () => {
+        try {
+          const response = await fetch(`${SERVER_URL}/products/add`, {
+            method: "POST",
+            headers: "application/json",
+            body, //body:body
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      addNewProduct();
+
+      // PATCH METHOD
+      // patch ma sabai data
+      const updateProduct = async (product, id) => {
+        try {
+          const body = JSON.stringify(product);
+
+          const response = await fetch(`${SERVER_URL}/products/${id}`, {
+            method: "PUT",
+            body: body,
+          });
+          const updateProd = await response.json();
+          console.log("product updated", updateProd);
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      updateProduct({ title: "hello" }, 2);
+
+      // DELETE METHOD
+      const deleteProduct = () => {};
+    </script>
+  </body>
+</html>
