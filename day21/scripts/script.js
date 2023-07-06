@@ -131,7 +131,7 @@ editTodoBtn.addEventListener("click", (e) => {
       ? {
           id: tt.id,
           name: editedTodo,
-          completed: tt.completed,
+          completed: todo.completed,
         }
       : tt;
   });
