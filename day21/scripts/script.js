@@ -1,4 +1,5 @@
 // classlist is just like classname of bootstrap which takes more classname rather than using single className
+// bootstrap modal is used to update in pop which can edit and save the edit and then close that modlar in button click
 
 //just getting the element from the html using queryselector
 const todoForm = document.querySelector("#todo-form");
@@ -9,6 +10,7 @@ console.log(todoForm);
 console.log(todoInput);
 
 let todos = []; //here appended every todo
+let todoId = "";
 
 //
 todoForm.addEventListener("submit", (event) => {
@@ -81,6 +83,16 @@ const displayTodos = () => {
     const editButton = document.createElement("Button");
     editButton.classList.add("btn", "btn-primary", "btn-sm", "me-2");
     editButton.innerHTML = "EDIT";
+    // modal part html mai modal ra button vako vaye siddai html ko modal butto ma hunthyo yo attribute but yeta set attribute
+    editButton.setAttribute("data-bs-toggle", "modal");
+    editButton.setAttribute("data-bs-target", "#editModal");
+    editButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      // at first input field ma pailakai todo name aaunu paryo then only edit happens so todo.name is stored in the input field
+      // edit input khali rakhdinu hunna
+      document.querySelector("#newtodo").value = todo.name;
+      todoId = todo.id;
+    });
 
     // delete button
     const deleteButton = document.createElement("Button");
@@ -105,3 +117,24 @@ const displayTodos = () => {
     todoList.append(li);
   });
 };
+
+//when user click edit changes button in modal triggerred
+const editTodoBtn = document.getElementById("edit-changes");
+editTodoBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  //same id with changed value
+  // const newName = document.getElementById("newtodo").value;
+  // console.log(newName, todoId);
+  const editedTodo = document.getElementById("newtodo").value;
+  todos = todos.map((tt) => {
+    return tt.id === todoId
+      ? {
+          id: tt.id,
+          name: editedTodo,
+          completed: todo.completed,
+        }
+      : tt;
+  });
+  displayTodos();
+  document.getElementById("btn-close").click();
+});

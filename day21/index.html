@@ -43,6 +43,63 @@
       </div>
     </div>
 
+    <!-- Button trigger modal -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button> -->
+    <!-- HERE WE HAVE EDIT BUTTON DEFINED IN JS SO WE ADD THIS BUTTON TRIGGER MODAL ATTRIBUTE IN EDITBUTTON -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">
+              Edit Todo
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input
+              type="text"
+              id="newtodo"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="btn-close"
+            >
+              Close
+            </button>
+            <button id="edit-changes" type="button" class="btn btn-primary">
+              Edit changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- script link at the end of body -->
 
     <script
