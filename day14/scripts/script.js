@@ -401,3 +401,34 @@
 // console.log(b);
 
 // customize garera ni value return garna milxa map but filter ma mildaina
+
+////****************************************************************************
+// Missing Number: Write a function that takes an array of numbers from 1 to n, with one number missing, and returns the missing number.
+// let array = [1, 9];
+// let n = 20;
+// let outputArray = [];
+// const missingNumberFun = (arr) => {
+//   for (let index = 1; index < n; index++) {
+//     // check
+
+//     !arr.includes(index) ? outputArray.push(index) : "";
+//   }
+//   console.log(outputArray);
+// };
+// missingNumberFun(array);
+
+// let array = [1, 9];
+// let n = 20;
+// let outputArray = [];
+// const missingNumberFun = (arr) => {
+//   for (let i = 1; i < n; i++) {
+//     // check
+
+//     // !arr.includes(index) ? outputArray.push(index) : "";
+//     arr.filter((val) => {
+//       return i !== val ? outputArray.push(i) : "";
+//     });
+//   }
+//   console.log(outputArray);
+// };
+// missingNumberFun(array);

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation in Form using even listener and fetch api</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <!-- body here -->
+    <div
+      class="container bg-dark d-flex justify-content-center align-items-center"
+    >
+      <form action="#">
+        <div class="row d-flex justify-content-center">
+          <div class="col-3 btn btn-lg btn-outline-primary text-light me-5">
+            Login
+          </div>
+          <div class="col-3 btn btn-lg btn-primary">Sign Up</div>
+        </div>
+
+        <div class="row top">
+          <div class="col-6 mb-4 col-md-12">
+            <label for="userName" class="form-label"
+              >UserName <span class="text-danger"></span
+            ></label>
+            <input type="text" id="userName" class="form-control" />
+          </div>
+
+          <div class="col-6 mb-4 col-md-12">
+            <label for="password" class="form-label"
+              >Password <span class="text-danger"></span
+            ></label>
+            <input type="password" id="password" class="form-control" />
+            <div class="forgot">
+              <a href="#" class="text-danger">Forgot Password?</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn btn-primary btn-lg" id="submit-btn">Submit</div>
+      </form>
+    </div>
+
+    <!-- external js file  + bootstrap js links-->
+    <script src="./scripts/form.js"></script>
+    <script
+      type="text/javascript"
+      src="./bootstrap-5.3.0-dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>
