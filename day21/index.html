@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD opration/DOM Manipulation todolist</title>
+    <link
+      rel="stylesheet"
+      href="../day20/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- body goes here -->
+    <div class="container mt-4">
+      <h1 class="text-center text-warning text mb-4">TODO LIST</h1>
+
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <form id="todo-form">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="todo-input"
+                placeholder="Add Todo"
+              />
+
+              <!-- label for floating form class -->
+              <label for="todo-input" class="form-label">ADD TODO</label>
+            </div>
+            <!-- adding button with type=submit ao that directly submitted through form-->
+            <button class="btn btn-success btn-lg" type="submit">ADD</button>
+          </form>
+        </div>
+      </div>
+      <!-- another div having ul class to store the list element created directly in script.js file -->
+      <!-- here we have only the ul to hold li sent from js -->
+      <!-- mainly we need in this project the id- todo-form ,todo-input, todo-list  in the js file to work on the functionality  -->
+      <div class="row mt-4">
+        <div class="col-md-8 mx-auto">
+          <ul class="list-group" id="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- script link at the end of body -->
+
+    <script
+      type="text/javascript"
+      src="../day20/bootstrap-5.3.0-dist/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+    <!-- body ends here -->
+  </body>
+</html>
