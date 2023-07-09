@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solved Question</title>
+  </head>
+  <body>
+    <script>
+      // Missing Number: Write a function that takes an array of numbers from 1 to n, with one number missing, and returns the missing number.
+      //missing number in the given array from the count 1 to 20
+      let array = [1, 9];
+      let n = 20;
+      let outputArray = [];
+      const missingNumberFun = (arr) => {
+        for (let index = 1; index < n; index++) {
+          // check
+
+          !arr.includes(index) ? outputArray.push(index) : "";
+        }
+        console.log(`Given array :[${array}] `);
+        console.log(
+          `Missing element of an array from 1 to 20 : [${outputArray}]`
+        );
+      };
+      missingNumberFun(array);
+    </script>
+  </body>
+</html>

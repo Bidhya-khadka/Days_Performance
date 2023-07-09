@@ -10,8 +10,11 @@ submitBTN.addEventListener("click", async (event) => {
   console.log(`username:${uname} password:${pswd}`);
 
   // validation
-  if (uname === "" || pswd === "") {
-    document.querySelectorAll("span").innerHTML = "* required";
+  if (uname === "") {
+    document.querySelector("#req1").innerHTML = "* required";
+  }
+  if (pswd === "") {
+    document.querySelector("#req2").innerHTML = "* required";
   }
 
   // fetch api hit with method post

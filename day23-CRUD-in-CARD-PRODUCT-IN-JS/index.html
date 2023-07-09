@@ -1,0 +1,91 @@
+<!-- index.html is for login purpose only where as we have signup.html for signup, product.html to view products after login from index.html page -->
+<!-- backend api is given by sir to register login and see products -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="../day20/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        width: 30%;
+        padding: 20px;
+        margin-top: 50px;
+        box-shadow: -4px -4px 101px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -4px -4px 101px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -4px -4px 101px 0px rgba(0, 0, 0, 0.75);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border border-primary border-3 rounded bg-secondary">
+      <h3 class="text-center text-light mt-10 fw-bold">Login</h3>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="form-label">Email address</label>
+          <span id="err-email" class="text-danger"></span>
+
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="form-label">Password</label>
+          <span id="err-password" class="text-danger"></span>
+          <input type="password" class="form-control" id="password" required />
+        </div>
+
+        <div class="text-center">
+          <h5>
+            Haven't Registered Yet?
+            <span
+              ><a
+                href="./signup.html"
+                target="_blank"
+                class="text-light text-decoration-none"
+                ><b>Sign Up</b></a
+              ></span
+            >
+          </h5>
+        </div>
+
+        <div class="text-center mt-4">
+          <button
+            class="btn btn-primary btn-lg text-center rounded-pill"
+            onclick="login(event)"
+          >
+            Login
+          </button>
+        </div>
+
+        <!-- eror message after response -->
+        <div
+          class="text-danger text-center mb-4 fs-16 fw-bold"
+          id="toast-message"
+        ></div>
+      </form>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="../day20/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
